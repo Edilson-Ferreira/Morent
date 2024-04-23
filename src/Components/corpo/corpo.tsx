@@ -1,7 +1,10 @@
 import { Bloc, BlockFlex, Body,Container, Content } from "./style"
 import { NotificationObjeto } from ".."
+import { useState } from "react"
 
 function Corpo(){
+  const [curtido, setCurtido] = useState(false)
+
   return(
     <Body>
       <NotificationObjeto.Root>
@@ -47,7 +50,7 @@ function Corpo(){
             value="$80.00"
             width={{marginTop: '16%'}}
             bloco={{paddingLeft: '1%'}}
-            coracao="../../../src/assets/heart 2.png"
+           
             carro="../../../src/assets/car-GT.png"
             block={{marginTop: '28%'}}
             imgCss={{marginLeft:'10%'}}
@@ -75,7 +78,7 @@ function Corpo(){
               value="$80.00"
               width={{marginTop: '16%'}}
               bloco={{paddingLeft: '1%'}}
-              coracao="../../../src/assets/heart 2.png"
+             
               carro="../../../src/assets/car-GT.png"
               block={{marginTop: '29%'}}
               imgCss={{marginLeft:'10%'}}
@@ -91,7 +94,7 @@ function Corpo(){
             pessoas="6 People"
             value="$72.00"
             width={{marginTop: '10%'}}
-            coracao="../../../src/assets/heart 2.png"
+           
             carro="../../../src/assets/car-Rus.png"
           />
           <NotificationObjeto.Carro 
@@ -117,7 +120,8 @@ function Corpo(){
               width={{marginTop: '16%'}}
               bloco={{paddingLeft: '1%'}}
               carro="../../../src/assets/Car-Terior.png"
-              coracao="../../../src/assets/heart 2.png"
+              coracao={curtido}
+              onpress={()=>setCurtido(!curtido)}
             />
             <NotificationObjeto.Carro 
               valores="/" 
@@ -154,7 +158,7 @@ function Corpo(){
             bloco={{paddingLeft: '1%'}}
             block={{marginTop:'15%'}}
             carro="../../../src/assets/Car-ZS.png"
-            coracao="../../../src/assets/heart 2.png"
+            coracao={true}
             imgCss={{marginLeft:'0'}}
             />
             <NotificationObjeto.Carro 
@@ -181,7 +185,7 @@ function Corpo(){
               bloco={{paddingLeft: '1%'}}
               block={{marginTop:'15%'}}
               carro="../../../src/assets/Car-ZS.png"
-              coracao="../../../src/assets/heart 2.png"
+              coracao={true}
               imgCss={{marginLeft:'0'}}
             />
         </Container>

@@ -13,7 +13,7 @@ interface VehicleProps {
   nome?: string;
   modelo?: string;
   titulo?: string;
-  coracao?: string; 
+  coracao?: boolean; 
   carro?: string;
   litro?: string;
   pessoas?: string;
@@ -23,11 +23,12 @@ interface VehicleProps {
   bloco?: React.CSSProperties;
   block?: React.CSSProperties;
   imgCss?: React.CSSProperties;
+  onpress?: any;
 }
 
-function Vehicle({valores, nome, modelo, titulo, coracao, carro, litro, pessoas, value, filter, width, bloco, block, imgCss}: VehicleProps){
+function Vehicle({valores, nome, modelo, titulo, coracao, carro, litro, pessoas, value, filter, width, bloco, block, imgCss, onpress}: VehicleProps){
   return(
-    <Container style={bloco}>
+    <Container onClick={onpress} style={bloco}>
       <Title>{titulo}</Title>
       <BlockWhite style={width}>
         <BlockHeader>
@@ -35,7 +36,7 @@ function Vehicle({valores, nome, modelo, titulo, coracao, carro, litro, pessoas,
             <TitleOne>{nome}</TitleOne>
             <TitleTwo>{modelo}</TitleTwo>
             </BlockTitle>
-          <Heart src={coracao || heart} alt="" />
+          <Heart src={coracao ? "../../../src/assets/heart 2.png": "../../../src/assets/heart.png"} alt="" />
         </BlockHeader>
         <Car style={imgCss} src={carro || car} alt="" />
         <Block style={block}>
