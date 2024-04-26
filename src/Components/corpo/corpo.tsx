@@ -1,4 +1,4 @@
-import { Bloc, BlockFlex, Body,Container, Content } from "./style"
+{/*import { Bloc, BlockFlex, Body,Container, Content } from "./style"
 import { NotificationObjeto } from ".."
 import { useState } from "react"
 
@@ -23,9 +23,20 @@ function Corpo(){
           />
         </Bloc>
         <BlockFlex>
-          <NotificationObjeto.text title="Pick - Up" />
+          <NotificationObjeto.text 
+            title="Pick - Up" 
+            text="Locations" 
+            text2="Date" 
+            text3="Time"
+          />
           <NotificationObjeto.ContentBlue />
-          <NotificationObjeto.text title="Drop - Off" cor={{marginLeft:'2.5%'}}/>
+          <NotificationObjeto.text 
+            title="Drop - Off" 
+            text="Locations" 
+            text2="Date" 
+            text3="Time" 
+            cor={{marginLeft:'2.5%'}}
+          />
         </BlockFlex>
         <Content>
         <Container>
@@ -198,4 +209,4 @@ function Corpo(){
     </Body>
   )
 }
-export default Corpo
+export default Corpo*/}

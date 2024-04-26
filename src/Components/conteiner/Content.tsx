@@ -1,14 +1,22 @@
 import ball from "../../assets/mark.png"
-import ContentTitle from "../ContentTitle/ContentTitle";
-import {  BlockTitle, BlockWhite, Container, Icon, Title } from "./style"
+import {  Arrow, BlockDate, BlockSon, BlockTime, BlockTitle, BlockUp, BlockWhite, Blocks, Container, Icon, LittleBlock, Title, TitleBlack, TitleClear } from "./style"
+import arrow from "../../assets/arrow-down.png"
 
 interface ContentProps {
   title: string;
   bola?: string;
   cor?: React.CSSProperties; 
+  text?: string;
+  text2?: string;
+  text3?: string;
+  seta?: string;
+  Cor?: React.CSSProperties;
+  estilo?:React.CSSProperties;
+  Blocos?:React.CSSProperties;
+  width?:React.CSSProperties;  
 }
 
-function Content({title, bola, cor}: ContentProps){
+function Content({title, bola, cor, seta, Cor, text, text2, text3, estilo, Blocos, width}: ContentProps){
   return(
     <BlockWhite style={cor}>
     <Container>
@@ -16,9 +24,31 @@ function Content({title, bola, cor}: ContentProps){
       <Title>{title}</Title>
     </Container>
    <BlockTitle>
-     <ContentTitle text="Locations" />
-      <ContentTitle text="Date" Cor={{borderLeft: '1px solid #C3D4E9', paddingLeft: '20px'}}/>
-      <ContentTitle text="Time" Cor={{borderLeft: '1px solid #C3D4E9', paddingLeft: '20px'}}/>
+   <BlockUp style={Cor}>
+      <Blocks style={width}>
+        <LittleBlock style={Blocos}> 
+          <TitleBlack>{text}</TitleBlack>
+          <BlockSon style={estilo}>
+            <TitleClear>Select your city</TitleClear>
+            <Arrow src={seta || arrow} alt="" />
+          </BlockSon>
+        </LittleBlock>
+        <BlockDate style={Blocos}>
+          <TitleBlack>{text2}</TitleBlack>
+          <BlockSon style={estilo}>
+            <TitleClear>Select your city</TitleClear>
+            <Arrow  src={seta || arrow} alt="" />
+          </BlockSon>
+        </BlockDate>
+        <BlockTime style={Blocos}>
+          <TitleBlack>{text3}</TitleBlack>
+          <BlockSon style={estilo}>
+            <TitleClear>Select your city</TitleClear>
+            <Arrow  src={seta || arrow} alt="" />
+          </BlockSon>
+        </BlockTime>
+      </Blocks>
+    </BlockUp>
    </BlockTitle>
   </BlockWhite>
   )
