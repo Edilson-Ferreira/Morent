@@ -200,7 +200,7 @@ function Corpo(){
               imgCss={{marginLeft:'0'}}
             />
         </Container>
-         <NotificationObjeto.botao />
+         <NotificationObjeto.botao Title='Show more car'/>
         </Content>
 
         <NotificationObjeto.Rodape />      

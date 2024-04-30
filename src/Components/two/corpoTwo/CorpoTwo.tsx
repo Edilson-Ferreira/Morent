@@ -197,7 +197,7 @@ function CorpoTwo(){
                     pessoas="4 People"
                   />
               </Container>
-              <NotificationObjeto.botao />
+              <NotificationObjeto.botao Title="Show more car"/>
               </Three>
             </Content>
           </BlockSegundario>

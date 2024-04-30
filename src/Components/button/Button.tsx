@@ -1,9 +1,14 @@
 import { BlockButton, Botao } from "./style"
 
-function Button(){
+interface ButtonPropos {
+  Filter?: React.CSSProperties;
+  Title?: string;
+}
+
+function Button({Filter, Title}: ButtonPropos){
   return(
     <BlockButton>
-      <Botao type="submit">Show more car</Botao>
+      <Botao style={Filter} type="submit">{Title}</Botao>
     </BlockButton>
   )
 }
