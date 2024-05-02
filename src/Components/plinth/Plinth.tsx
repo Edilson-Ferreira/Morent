@@ -1,8 +1,12 @@
 import { PlinthWhite, BlockLine, BlockOne, TitleOne, TextOne, TowBlock, BlockTwo, TitleBlack, Title, PlinthOne, TitlePlinth, TwoPlinth, TwoTitle, Rodape } from "./style"
 
-function Plinth(){
+interface PlinthProps {
+  font?: React.CSSProperties;
+}
+
+function Plinth({font}:PlinthProps){
   return(
-    <PlinthWhite>
+    <PlinthWhite style={font}>
     <BlockLine>
       <BlockOne>
         <TitleOne>MORENT</TitleOne>

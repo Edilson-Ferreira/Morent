@@ -5,6 +5,7 @@ import NotificationCar from "./car/NotificationCar";
 import Content from "./conteiner/Content";
 import Header from "./header/NotificationHeader";
 import Plinth from "./plinth/Plinth";
+import Comment from "./three/comment/Comment";
 import NavBar from "./two/NavBarSite/NavBar";
 import Vehicle from "./vehicle/Vehicle";
 
@@ -18,4 +19,5 @@ export const NotificationObjeto = {
   botao: Button,
   Rodape: Plinth,
   Nav: NavBar,
+  Comment: Comment,
 }

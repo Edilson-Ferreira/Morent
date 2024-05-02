@@ -1,6 +1,6 @@
 import { NotificationObjeto } from ".."
 import NotificationRoot from "../Root/NotificationRoot"
-import { Block, BlockFotos, BlockHeader, BlockHeaderTwo, BlockImg, BlockLeft, BlockOne, BlockRodape, BlockStarTitle, BlockText, BlockTitles, BlockTwo, BlockValor, Bloco, BloquinhosFotos, Body, ButtonHeaderTwo, Container, Content, ContentRodape, Coracao, IconCar, IconImagens, Navebar, OneBlock, Stat, Text, Title, Title1, Title2, TitleBlock, TitleBlockStar, TitleHeaderTwo, TitleValue, TitloClaro, TitloEscuro, TwoBlock, Valor, ValueCem } from "./style"
+import { Block, BlockArrow, BlockCar, BlockFotos, BlockHeader, BlockHeaderTwo, BlockImg, BlockLeft, BlockOne, BlockRodape, BlockStarTitle, BlockText, BlockTitles, BlockTwo, BlockValor, Bloco, BloquinhosFotos, Body, ButtonHeaderTwo, Container, Content, ContentRodape, Coracao, IconCar, IconImagens, Navebar, OneBlock, Seta, Stat, Text, Title, Title1, Title2, TitleArrow, TitleBlock, TitleBlockStar, TitleHeaderTwo, TitleValue, TitloClaro, TitloEscuro, TwoBlock, Valor, ValueCem } from "./style"
 import Car from "../../assets/BG (1) cópia 2.png"
 import foto from "../../assets/View 1.png"
 import Interior1 from "../../assets/View 2.png"
@@ -8,6 +8,7 @@ import Interior2 from "../../assets/View 3.png"
 import Heart from "../../assets/heart.png"
 import estrela from "../../assets/Review Star.png"
 import valor from "../../assets/$100.00.png"
+import seta from "../../assets/arrow-down 2.png"
 
 function CorpoThree(){
   return(
@@ -132,9 +133,108 @@ function CorpoThree(){
                   <TitleHeaderTwo>Reviews</TitleHeaderTwo>
                   <ButtonHeaderTwo>13</ButtonHeaderTwo>
                 </BlockHeaderTwo>
+              <NotificationObjeto.Comment 
+                TitleOne="Alex Stanton"
+                TitleTwo="CEO at Bukalapak"
+                Text="We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable"
+                TextTwo="facilities. In addition, the service provided by the officers is also very friendly and very polite."
+              />
+               <NotificationObjeto.Comment 
+                TitleOne="Skylar Dias"
+                TitleTwo="CEO at Amazon"
+                Text="We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and"
+                TextTwo="comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite."
+                Person="../../../src/assets/cópia de Profill (3).png"
+              />
+              <BlockArrow>
+                <TitleArrow>Show All</TitleArrow>
+                <Seta src={seta} alt="" />
+              </BlockArrow>
               </BlockTwo>
+             <BlockCar>
+             <NotificationObjeto.Carro
+                    titulo="Popular Car"
+                    nome="Koenigsegg"
+                    modelo="Sport"
+                    width={{width: '22vw', height:'50vh', marginTop:'8%'}}
+                    block={{gap:'12%'}}
+                    value="$99.00"
+                    valores="/"
+                    litro="90L"
+                    pessoas="2 People"
+                    carro="../../../src/assets/car.png"
+                    imgCss={{marginLeft: '11%'}}
+                  />
+                  <NotificationObjeto.Carro
+                    nome="Nissan GT - R"
+                    modelo="Sport"
+                    width={{width:'22vw', height:'50vh',marginTop:'13.5%'}}
+                    carro="../../../src/assets/car-GT.png"
+                    imgCss={{marginLeft: '13%'}}
+                    block={{gap:'12%'}}
+                    value="$80.00"
+                    litro="80L"
+                    pessoas="2 People"
+                    coracao={true}
+                  />
+                  <NotificationObjeto.Carro
+                    nome="Rolls-Royce"
+                    modelo="Sport"
+                    width={{width:'22vw', height:'50vh',marginTop:'13.5%'}}
+                    carro="../../../src/assets/Car-Rolls.png"
+                    block={{gap:'12%'}}
+                    value="$96.00"
+                    valores="/"
+                    litro="70L"
+                    pessoas="4 People"
+                    imgCss={{marginLeft: '13%'}}
+                    coracao={true}
+                  />
+             </BlockCar>
+             <BlockCar>
+             <NotificationObjeto.Carro
+                    titulo="Recomendation Car" 
+                    nome="All New Rush"
+                    modelo="SUV"
+                    width={{width:'22vw', height:'50vh', marginTop:'8%'}}
+                    imgCss={{marginLeft:'9%'}}
+                    block={{gap:'12%'}}
+                    value="$72.00"
+                    valores="../../../src/assets/$80.00.png"
+                    litro="70L"
+                    pessoas="6 People"
+                    carro="./../../src/assets/Car-Rus.png"
+                    coracao={true}
+                  />
+                  <NotificationObjeto.Carro
+                    nome="CR  - V"
+                    modelo="SUV"
+                    width={{width:'22vw', height:'50vh',marginTop:'13.5%'}}
+                    carro="../../../src/assets/Car-CRV.png"
+                    imgCss={{marginLeft:'6.5%'}}
+                    block={{gap:'12%'}}
+                    value="$80.00"
+                    litro="80L"
+                    pessoas="6 People"
+                    valores="/"
+                  />
+                  <NotificationObjeto.Carro
+                    nome="All New Terios"
+                    modelo="SUV"
+                    width={{width:'22vw', height:'50vh',marginTop:'13.5%'}}
+                    carro="../../../src/assets/Car-Terior.png"
+                    imgCss={{marginLeft:'11%'}}
+                    block={{gap:'12%'}}
+                    value="$74.00"
+                    valores="/"
+                    litro="74L"
+                    pessoas="6 People"
+                    coracao={true}
+                  />
+             </BlockCar>
             </BlockLeft>
           </Container>
+          <NotificationObjeto.Rodape/>
         </Block>
       </NotificationRoot>
     </Body>

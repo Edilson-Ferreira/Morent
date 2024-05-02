@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Body = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 300vh;
   background: #F6F7F9;
 `
 export const Block = styled.div`
@@ -15,7 +15,7 @@ export const Navebar = styled.div`
   padding-left: 2%;
   padding-top: 2%;
   width: 18%;
-  height: 205.5vh;
+  height: 252vh;
   background: #ffffff;
   border-top: 2px solid #F6F7F9;
 `
@@ -25,7 +25,7 @@ export const BlockLeft = styled.div`
 export const BlockOne = styled.div`
   display: flex;
   width: 75vw;
-  padding-left: 3%;
+  padding-left: 4%;
   gap: 3%;
   margin-top: 4%;
 `
@@ -171,15 +171,50 @@ export const BlockImg = styled.div`
 export const ValueCem = styled.img`
 
 `
-export const BlockTwo = styled.img`
-  width: 50%;
+export const BlockTwo = styled.div`
+  background: #FFFFFF;
+  width: 96.7%;
+  height: 21.5%;
+  border-radius: 10px;
+  margin-left: 4%;
+  margin-top: 3%;
+  padding-left: 2.5%;
+  padding-top: 2%;
 `
 export const BlockHeaderTwo = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 2%;
 `
 export const TitleHeaderTwo = styled.p`
-
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `
 export const ButtonHeaderTwo = styled.button`
+  color: #FFFFFF;
+  background: #3563E9;
+  border: none;
+  width: 3.7%;
+  height: 27px;
+  border-radius: 4px;
+`
+export const BlockArrow = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.6%;
+  gap: 1%;
+`
+export const TitleArrow = styled.p`
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  color: #90A3BF;
+  font-weight: 600;
+`
+export const Seta = styled.img`
 
+`
+export const BlockCar = styled.div`
+  display: flex;
+  gap: 0.9%;
 `
