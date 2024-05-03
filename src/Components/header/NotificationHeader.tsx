@@ -7,8 +7,14 @@ import Settings from "../../assets/Settings.png"
 import Profil from "../../assets/Profil.png"
 import { Block, BlockHeader, BlockInputIcon, BlockLogo, BlockOne, BlockRound, BlockTwo, IconFilter, IconLike, IconLogo, IconNotification, IconProfil, IconSearh, IconSetings, InputSearh } from "./style"
 
+interface HeaderProps {
+  Input?: string;
+  IconOne?: string;
+  IconTwo?: string;
+  bloco?: React.CSSProperties;
+}
 
-function NotificationHeader(){
+function NotificationHeader({Input,IconOne, IconTwo, bloco}:HeaderProps){
   return(
     <BlockHeader>
           <Block>   
@@ -16,12 +22,12 @@ function NotificationHeader(){
               <BlockLogo> 
                 <IconLogo src={Logo} alt="" />
               </BlockLogo>
-              <BlockRound>
+              <BlockRound style={bloco}>
                 <BlockInputIcon>
-                  <IconSearh src={Searh} alt="" />
-                  <InputSearh type="text" style={{width:'74%', height:'44px'}}/>
+                  {IconOne && <IconSearh src={Searh} alt="" />}
+                  {Input && <InputSearh value={Input} type="text" style={{ width: '74%', height: '44px' }} />}
                 </BlockInputIcon>
-                  <IconFilter src={Filter} alt="" />
+                 { IconTwo && <IconFilter src={Filter} alt="" />}
               </BlockRound>
             </BlockOne>
 
