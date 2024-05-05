@@ -2,10 +2,12 @@ import { NotificationObjeto } from ".."
 import NotificationRoot from "../Root/NotificationRoot"
 import NotificationHeader from "../header/NotificationHeader"
 import { BlockCar } from "../three/style"
-import {Block, BlockGray, BlockGreyHeader, BlockInput, BlockInputOne,BlockLastInput,BlockLayer,BlockLeft, BlockPenultimate, BlockRight, BlockRound, BlockTypeCard, BlockWhite, BlockWhiteTwo, Blocklast, Body, Card, ContentFlex, IconLayer, Input, InputCheckbox, Label, TitleBlockRound} from "./style"
+import {Block, BlockCinza, BlockGray, BlockGreyHeader, BlockIconGtr, BlockInput, BlockInputOne,BlockLastInput,BlockLayer,BlockLeft, BlockPenultimate, BlockRight, BlockRodape, BlockRound, BlockSmall, BlockStarTitle, BlockTitleValue, BlockTypeCard, BlockWhite, BlockWhiteTwo, Blocklast, Bloco, Body, Card, Content, ContentFlex, IconGtr, IconLayer, Input, InputCheckbox, Label, Star, TitleBlack, TitleBlockRound, TitleCinza, TitleGtr, TitleStar, TitleValue, TituloValor, ValueTitle} from "./style"
 import Visa from "../../assets/Visa_Inc._logo 1.png"
 import Master from "../../assets/mc.png"
 import Layer from "../../assets/Layer.png"
+import GTR from "../../assets/Look.png"
+import estrela from "../../assets/Review Star.png"
 
 function CorpoFour(){
   return(
@@ -127,12 +129,50 @@ function CorpoFour(){
               </BlockLayer>
               <NotificationObjeto.header 
                 TitleOne="Confirmation"
-                TitleTwo="We are getting to the end. Just few clicks and your rental is ready!"
+                TitleTwo="the end. Just few clicks and your rental is ready!"
               />
             </Blocklast>  
            </BlockRight>
            <BlockLeft>
-            
+              <NotificationObjeto.header
+                TitleOne="Rental Summary"
+                TitleTwo="Prices may change depending on the length of the rental and the price of your rental car."
+                estilo1={{marginTop:'1%', width:'83%'}}
+              />
+              <BlockSmall>
+               <Bloco>
+                  <BlockIconGtr>
+                    <IconGtr src={GTR} alt="" />
+                  </BlockIconGtr>
+                  <Content>
+                    <TitleGtr>Nissan GT - R</TitleGtr>
+                    <BlockStarTitle>
+                      <Star src={estrela} alt="" />
+                      <TitleStar>440+ Reviewer</TitleStar>
+                    </BlockStarTitle>
+                  </Content>
+               </Bloco>
+              </BlockSmall>
+              <BlockTitleValue>
+                <TitleValue>Subtotal</TitleValue>
+                <ValueTitle>$80.00</ValueTitle>
+              </BlockTitleValue>
+              <BlockTitleValue>
+                <TitleValue>Tax</TitleValue>
+                <ValueTitle>$0</ValueTitle>
+              </BlockTitleValue>
+              <BlockCinza>
+                <TitleCinza>Apply promo code</TitleCinza>
+                <TitleBlack>Apply now</TitleBlack>
+              </BlockCinza>
+              <BlockRodape>
+                <NotificationObjeto.header
+                  TitleOne="Rental Summary"
+                  TitleTwo="Overall price and includes rental discount"
+                  estilo1={{marginTop:'1%', width:'100%'}}
+                />
+                <TituloValor>$80.00</TituloValor>
+              </BlockRodape>
            </BlockLeft>
           </ContentFlex>
           <NotificationObjeto.Rodape/>
