@@ -8,7 +8,7 @@ import Profil from "../../assets/Profil.png"
 import { Block, BlockHeader, BlockInputIcon, BlockLogo, BlockOne, BlockRound, BlockTwo, IconFilter, IconLike, IconLogo, IconNotification, IconProfil, IconSearh, IconSetings, InputSearh } from "./style"
 
 interface HeaderProps {
-  Input?: string;
+  Input?: boolean;
   IconOne?: string;
   IconTwo?: string;
   bloco?: React.CSSProperties;
@@ -25,7 +25,7 @@ function NotificationHeader({Input,IconOne, IconTwo, bloco}:HeaderProps){
               <BlockRound style={bloco}>
                 <BlockInputIcon>
                   {IconOne && <IconSearh src={Searh} alt="" />}
-                  {Input && <InputSearh value={Input} type="text" style={{ width: '74%', height: '44px' }} />}
+                  {Input && <InputSearh  type="text" style={{ width: '74%', height: '44px' }} />}
                 </BlockInputIcon>
                  { IconTwo && <IconFilter src={Filter} alt="" />}
               </BlockRound>

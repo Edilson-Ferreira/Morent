@@ -14,14 +14,15 @@ interface ContentProps {
   estilo?:React.CSSProperties;
   Blocos?:React.CSSProperties;
   width?:React.CSSProperties;  
+  filter?:React.CSSProperties;  
 }
 
-function Content({title, bola, cor, seta, Cor, text, text2, text3, estilo, Blocos, width}: ContentProps){
+function Content({title, bola, cor, seta, Cor, text, text2, text3, estilo, Blocos, width, filter}: ContentProps){
   return(
     <BlockWhite style={cor}>
     <Container>
       <Icon src={bola || ball} alt=""/>
-      <Title>{title}</Title>
+      <Title style={filter}>{title}</Title>
     </Container>
    <BlockTitle>
    <BlockUp style={Cor}>
