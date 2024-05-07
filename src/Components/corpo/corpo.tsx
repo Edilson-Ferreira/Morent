@@ -1,14 +1,18 @@
-{/*import { Bloc, BlockFlex, Body,Container, Content } from "./style"
+import { Bloc, BlockFlex, Body,Container, Content } from "./style"
 import { NotificationObjeto } from ".."
 import { useState } from "react"
 
-function Corpo(){
+function corpo(){
   const [curtido, setCurtido] = useState(false)
 
   return(
     <Body>
       <NotificationObjeto.Root>
-       <NotificationObjeto.cabecalho />
+       <NotificationObjeto.cabecalho 
+        IconOne="../../../src/assets/search-normal.png"
+        IconTwo="../../../src/assets/Profil.png"
+        Input={true}
+       />
         <Bloc>
           <NotificationObjeto.Car 
             titleOne="The Best Platform for Car Rental" 
@@ -209,4 +213,4 @@ function Corpo(){
     </Body>
   )
 }
-export default Corpo*/}
+export default corpo

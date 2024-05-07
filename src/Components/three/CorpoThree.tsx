@@ -14,7 +14,11 @@ function CorpoThree(){
   return(
     <Body>
       <NotificationRoot>
-        <NotificationObjeto.cabecalho />
+        <NotificationObjeto.cabecalho 
+          IconOne="../../../src/assets/search-normal.png"
+          IconTwo="../../../src/assets/Profil.png"
+          Input={true}
+        />
         <Block>
           <Container>
             <Navebar>
