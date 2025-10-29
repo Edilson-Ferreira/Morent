@@ -53,6 +53,8 @@ export const Block = styled.div`
   display: flex;
   gap: 10%;
   margin-top: 17%;
+  margin-left: 1%;
+  gap: 36px;
 `
 export const BlockOne = styled.div`
   display: flex;

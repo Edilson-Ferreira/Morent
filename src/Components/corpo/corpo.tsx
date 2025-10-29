@@ -64,7 +64,7 @@ function corpo(){
             pessoas="2 People"
             value="$80.00"
             width={{marginTop: '16%'}}
-            bloco={{paddingLeft: '1%'}}
+            bloco={{paddingLeft: '1%', }}
            
             carro="../../../src/assets/car-GT.png"
             block={{marginTop: '28%'}}

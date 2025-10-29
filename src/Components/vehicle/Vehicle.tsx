@@ -1,8 +1,7 @@
 
-import heart from "../../assets/heart.png"
-import car from "../../assets/car.png"
+//import heart from "../../assets/heart.png"
+import carrinho from "../../assets/car.png"
 import Gas from "../../assets/gas-station.png"
-import volante from "../../assets/cópia de Car.png"
 import profil from "../../assets/profile-2user.png"
 import { Block, BlockHeader, BlockOne, BlockPlinth, BlockPlinthkOne, BlockThree, BlockTitle, BlockTitleTwo, BlockTwo, BlockValue, BlockWhite, BlokoTitleOne, BlokoTitleThree, ButtonPlinth, Car, Container, Heart, IconOne, IconThree, IconTwo, Plinthk, Title, TitleOne, TitlePlinthOne, TitlePlinthTwo, TitleTwo, Value } from "./style"
 import valor from "../../assets/$100.00.png"
@@ -38,14 +37,13 @@ function Vehicle({valores, nome, modelo, titulo, coracao, carro, litro, pessoas,
             </BlockTitle>
           <Heart src={coracao ? "../../../src/assets/heart 2.png": "../../../src/assets/heart.png"} alt="" />
         </BlockHeader>
-        <Car style={imgCss} src={carro || car} alt="" />
+        <Car style={imgCss} src={carro || carrinho} alt="" />
         <Block style={block}>
           <BlockOne>
             <IconOne src={Gas} alt="" />
             <BlokoTitleOne>{litro}</BlokoTitleOne>
           </BlockOne>
           <BlockTwo>
-            <IconTwo src={volante} alt="" />
             <BlockTitleTwo>Manual</BlockTitleTwo>
           </BlockTwo>
           <BlockThree>

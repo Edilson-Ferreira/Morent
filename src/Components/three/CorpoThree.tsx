@@ -1,7 +1,7 @@
 import { NotificationObjeto } from ".."
 import NotificationRoot from "../Root/NotificationRoot"
 import { Block, BlockArrow, BlockCar, BlockFotos, BlockHeader, BlockHeaderTwo, BlockImg, BlockLeft, BlockOne, BlockRodape, BlockStarTitle, BlockText, BlockTitles, BlockTwo, BlockValor, Bloco, BloquinhosFotos, Body, ButtonHeaderTwo, Container, Content, ContentRodape, Coracao, IconCar, IconImagens, Navebar, OneBlock, Seta, Stat, Text, Title, Title1, Title2, TitleArrow, TitleBlock, TitleBlockStar, TitleHeaderTwo, TitleValue, TitloClaro, TitloEscuro, TwoBlock, Valor, ValueCem } from "./style"
-import Car from "../../assets/BG (1) cópia 2.png"
+import Car from "../../assets/bg _1_copia_2.png"
 import foto from "../../assets/View 1.png"
 import Interior1 from "../../assets/View 2.png"
 import Interior2 from "../../assets/View 3.png"

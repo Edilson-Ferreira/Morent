@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <GlobalStyled />
-      <Corpo />
+        <Corpo />
       {/*<CorpoTwo />*/}
       {/*<CorpoThree />*/}
       {/*<CorpoFour />*/}
